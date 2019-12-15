@@ -1,0 +1,218 @@
+body .header .header-wrap .landing-logo, body footer .footer-wrap .footer_logo {
+  display: inline-block;
+  font-family: "Fresca", sans-serif; }
+  body .header .header-wrap .landing-logo p, body footer .footer-wrap .footer_logo p {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 9px;
+    vertical-align: top;
+    text-align: center; }
+  body .header .header-wrap .landing-logo span, body footer .footer-wrap .footer_logo span {
+    display: block;
+    font-size: 12px;
+    margin-top: -7px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  min-width: 960px;
+  background-color: #21232E;
+  font-family: 'Source Sans Pro', sans-serif; }
+  body .header {
+    background-image: url(../img/m-h-night.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    border-bottom-right-radius: 50%;
+    width: 100%;
+    height: 100%; }
+    body .header .header-wrap {
+      padding: 20px 0 273px 189px;
+      color: #fff; }
+      body .header .header-wrap .header_heading {
+        font-size: 68px;
+        font-weight: 700;
+        line-height: 70px;
+        width: 500px;
+        position: relative;
+        z-index: 1;
+        margin-top: 55px; }
+        body .header .header-wrap .header_heading:after {
+          content: "";
+          display: block;
+          width: 288px;
+          height: 50px;
+          background-color: #FF0030;
+          z-index: -1;
+          position: absolute;
+          bottom: 0; }
+      body .header .header-wrap .header_text {
+        font-family: "Fresca", sans-serif;
+        white-space: pre-line;
+        line-height: 1.5;
+        margin-top: 45px;
+        margin-bottom: 65px; }
+      body .header .header-wrap .header_button {
+        width: 132px;
+        height: 47px;
+        font-size: 18px;
+        background-color: #E4B719;
+        color: #fff;
+        border-radius: 3px;
+        font-weight: 700;
+        padding: 16px 30px;
+        border: none;
+        vertical-align: middle; }
+      body .header .header-wrap .login {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 170px; }
+  body main {
+    width: 960px;
+    margin: 0 auto; }
+    body main .section_text {
+      color: #fff;
+      text-align: center;
+      font-size: 45px;
+      position: relative;
+      font-weight: 400;
+      padding-top: 31px; }
+      body main .section_text:before {
+        content: "";
+        display: block;
+        width: 193px;
+        height: 50px;
+        background-color: #FF0030;
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        top: 28px;
+        left: 492px; }
+    body main .section_card {
+      margin-top: 30px;
+      width: 90%;
+      display: inline-block;
+      background-color: #3B3F50;
+      padding: 15px;
+      border-radius: 5px; }
+      body main .section_card img {
+        display: inline;
+        float: left;
+        width: 350px;
+        border-radius: 5px; }
+      body main .section_card .section_card_right_container {
+        display: inline-block;
+        width: 465px;
+        text-align: center;
+        padding-left: 38px;
+        margin-top: 27px; }
+        body main .section_card .section_card_right_container .section_card_heading {
+          text-align: center;
+          font-size: 22px;
+          color: #fff;
+          font-weight: 600; }
+        body main .section_card .section_card_right_container .section_card_text {
+          font-family: "Fresca", sans-serif;
+          margin-top: 35px;
+          text-align: left;
+          color: #C0C3CE;
+          margin-bottom: 25px; }
+        body main .section_card .section_card_right_container .section_link {
+          text-align: center;
+          color: #C0C3CE;
+          font-size: 15px;
+          font-weight: 600; }
+    body main .section_banner {
+      margin-top: 30px;
+      position: relative;
+      bottom: -60px;
+      width: 100%;
+      margin-left: -5%;
+      height: 150px;
+      background: linear-gradient(to right, #E2B11A, #9D0051);
+      border-radius: 5px; }
+      body main .section_banner:before {
+        content: "";
+        display: block;
+        width: 54px;
+        height: 49px;
+        background-color: #FF0030;
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        top: 14px;
+        left: 221px;
+        z-index: 0; }
+      body main .section_banner .section_banner_text_wrap {
+        display: inline-block;
+        margin-left: 120px;
+        position: relative; }
+        body main .section_banner .section_banner_text_wrap .section_banner_heading {
+          margin-top: 35px;
+          font-size: 25px;
+          font-weight: 700;
+          color: #fff; }
+        body main .section_banner .section_banner_text_wrap .section_banner_text {
+          margin-top: 20px;
+          font-family: "Fresca", sans-serif;
+          color: #C0C3CE; }
+      body main .section_banner .section_banner_button {
+        width: 132px;
+        height: 47px;
+        font-size: 18px;
+        background-color: #E4B719;
+        color: #fff;
+        border-radius: 3px;
+        font-weight: 700;
+        padding: 16px 30px;
+        border: none;
+        vertical-align: middle;
+        float: right;
+        margin: 60px 120px 0 0; }
+  body footer {
+    font-family: "Fresca", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    color: #C0C3CE;
+    background: #3B3F50; }
+    body footer .footer-wrap {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      padding-top: 60px;
+      padding-left: 189px; }
+      body footer .footer-wrap .footer_logo {
+        width: 300px; }
+      body footer .footer-wrap .footer_text {
+        margin-left: 180px;
+        width: 350px;
+        min-width: 160px; }
+      body footer .footer-wrap .footer-cr {
+        margin-left: 350px; }

@@ -1,0 +1,270 @@
+%logo {
+	display: inline-block;
+	font-family: $spec-font;
+	p {
+		display: inline-block;
+		font-size: 26px;
+		font-weight: 600;
+		padding-left: 9px;
+		vertical-align: top;
+		text-align: center;
+	}	
+	span {
+		display: block;
+		font-size: 12px;
+		margin-top: -7px;
+		}
+}
+$colors: (
+	light: #fff,
+	text_grey: #C0C3CE,
+);
+@mixin buttons {
+	width: 132px;
+	height: 47px;
+	font-size: 18px;
+	background-color: $button-bg-color;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: 700;
+	padding: 16px 30px; 
+	border: none;
+	vertical-align: middle;
+}
+
+@mixin links($color, $font-size) {
+	color: $color;
+	font-size: $font-size;
+	font-weight: 600;
+}
+
+@mixin highlight ($width, $height) {
+				content: "";
+				display: block;
+				width: $width;
+				height: $height;
+				background-color: $text-highlight;
+				z-index: -1;
+				position: absolute;
+				bottom: 0;
+			}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+//Custom Styles
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	min-width: 960px;
+	background-color: $bg-color;
+	font-family: 'Source Sans Pro', sans-serif;
+	.header {
+	background-image: $contentBackground;
+	background-size: cover;
+	background-position: 0 55%;
+	border-bottom-right-radius: 50%;
+	width: 100%;
+	height: 100%;
+	.header-wrap {
+		padding: 20px 0 273px 189px;
+		color: $header-text-color;
+		.landing-logo {
+			@extend %logo;
+ 
+		}
+
+		.header_heading {
+			font-size: 68px;
+			font-weight: 700;
+			line-height: 70px;
+			width: 500px;
+			position: relative;
+			z-index: 1;
+			margin-top: 55px;
+			&:after {
+				@include highlight ($width: 288px, $height: 50px);
+			}
+
+		}
+
+		.header_text {
+			font-family: $spec-font;
+			white-space: pre-line;
+			line-height: 1.5;
+			margin-top: 45px;
+			margin-bottom: 65px;
+		}
+		.header_button {
+			@include buttons;
+		}
+		
+		.login {
+			@include links($color: map-get($colors, light), $font-size: 18px);
+			margin-left: 170px;
+			}
+
+		}	
+	}
+	main {
+		width: 960px;
+		margin: 0 auto;
+		
+		.section_text {
+			color: $header-text-color;
+			text-align: center;
+			font-size: 45px;
+			position: relative;
+			font-weight: 400;
+			padding-top: 31px;
+			
+			&:before {
+				@include highlight ($width: 193px, $height: 50px);
+				top: 28px;
+    			left: 492px;
+
+			}	
+		}
+		.section_card {
+			margin-top: 30px;
+			width: 90%;
+			display: inline-block;
+			background-color: $cards-bg-color;
+			padding: 15px;
+			border-radius: 5px;
+			img {
+				display: inline;
+				float: left;
+				width: 350px;
+				border-radius: 5px;
+			}
+			.section_card_right_container {
+				display: inline-block;
+				width: 465px;
+				text-align: center;
+				padding-left: 38px;
+				margin-top: 27px;
+				.section_card_heading {
+					text-align: center;
+					font-size: 22px;
+					color: map-get($colors, light);
+					font-weight: 600;
+				}
+				.section_card_text {
+					font-family: $spec-font;
+					margin-top: 35px;
+					text-align: left;
+					color: map-get($colors, text_grey);
+					margin-bottom: 25px;
+				}
+
+				.section_link {
+					text-align: center;
+					@include links($color: map-get($colors, text_grey), $font-size: 15px);
+				}				
+			}
+
+
+		}
+	.section_banner {
+		margin-top: 30px;
+		position: relative;
+		bottom: -60px;
+		width: 100%;
+		margin-left: -5%;
+		height: 150px;
+		background: $banner-bg;
+		border-radius: 5px;
+		&:before {
+				@include highlight ($width: 54px, $height: 49px);
+				top: 14px;
+    			left: 221px;
+    			z-index: 0;
+			}
+		.section_banner_text_wrap {
+			display: inline-block;
+			margin-left: 120px;
+			position: relative;
+			.section_banner_heading {
+				margin-top: 35px;
+				font-size: 25px;
+				font-weight: 700;
+				color: $header-text-color;
+			}
+
+			.section_banner_text {
+				margin-top: 20px;
+				font-family: $spec-font;
+				color: map-get($colors, text_grey);
+			}			
+		}
+		.section_banner_button {
+			@include buttons;
+			float: right;
+			margin: 60px 120px 0 0;
+
+
+		}
+	}
+	}
+
+	footer {
+		font-family: $spec-font;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 100%;
+		color: map-get($colors, text_grey);
+		background: $cards-bg-color;
+		.footer-wrap {
+			display: flex;
+			align-items: flex-end;
+			flex-direction: row;
+			padding-top: 60px;
+			padding-left: 189px;
+			.footer_logo {
+				width: 300px;
+				@extend %logo;
+			}
+
+			.footer_text {
+				margin-left: 180px;
+				width: 350px;
+				min-width: 160px;
+			}
+
+			.footer-cr { 
+				margin-left: 350px;
+			}
+		}
+	}
+
+
+}
+
+
+
+
