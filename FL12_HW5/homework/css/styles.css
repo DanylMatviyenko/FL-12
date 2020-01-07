@@ -261,6 +261,7 @@ h3 {
 
 footer {
   align-items: center;
+    justify-content: center;
   display: flex;
   flex-direction: row;
   color: darkgrey;
