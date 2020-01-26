@@ -1,0 +1,18 @@
+/* Todo: your styles go here*/
+ul {
+	list-style-type: none;
+}
+a {	
+	font-size: 20px;
+	color: grey;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+}
+a:hover {
+	background-color: rgba(71,74,81,.3);
+}
+i {
+	font-size: 20px;
+	color: grey;
+}
